@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gushwork — Hire World-Class Virtual Assistants</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== STICKY HEADER ===================== -->
+  <header class="sticky-header" id="stickyHeader" aria-label="Sticky navigation">
+    <div class="sticky-header__inner">
+      <a href="#" class="logo sticky-logo" aria-label="Gushwork home">
+        <span class="logo-icon">G</span>
+        <span>Gushwork</span>
+      </a>
+      <nav class="sticky-nav" aria-label="Sticky navigation links">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#carousel-section">Work</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary btn--sm">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="logo" aria-label="Gushwork home">
+        <span class="logo-icon">G</span>
+        <span>Gushwork</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#carousel-section">Work</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn--ghost">Log in</a>
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+      </div>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#carousel-section">Work</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact" class="btn btn--primary">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="hero__bg-grid" aria-hidden="true"></div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge-dot"></span>
+        Trusted by 500+ companies worldwide
+      </div>
+      <h1 class="hero__heading" id="hero-heading">
+        Hire brilliant<br />
+        <span class="highlight">Virtual Assistants</span><br />
+        in 24 hours
+      </h1>
+      <p class="hero__subtext">
+        Gushwork connects you with pre-vetted, highly skilled virtual assistants
+        from top universities — so you can focus on what matters most.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Start Hiring Today</a>
+        <a href="#how-it-works" class="btn btn--outline btn--lg">See How It Works</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Companies</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>Satisfaction</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>24h</strong>
+          <span>Onboarding</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero-card hero-card--main">
+        <div class="avatar-row">
+          <img src="https://i.pravatar.cc/48?img=47" alt="VA 1" class="avatar" />
+          <img src="https://i.pravatar.cc/48?img=32" alt="VA 2" class="avatar" />
+          <img src="https://i.pravatar.cc/48?img=11" alt="VA 3" class="avatar" />
+          <img src="https://i.pravatar.cc/48?img=25" alt="VA 4" class="avatar" />
+        </div>
+        <p class="card-label">Your matched assistants</p>
+        <div class="card-rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9 / 5.0</span>
+        </div>
+      </div>
+      <div class="hero-card hero-card--task">
+        <span class="task-icon">✓</span>
+        <div>
+          <p class="task-title">Inbox Zero achieved</p>
+          <p class="task-sub">2 mins ago · Priya S.</p>
+        </div>
+      </div>
+      <div class="hero-card hero-card--saving">
+        <p class="saving-label">Monthly savings</p>
+        <p class="saving-amount">$4,200</p>
+        <div class="saving-bar">
+          <div class="saving-fill" style="width:72%"></div>
+        </div>
+        <p class="saving-sub">vs. in-house hire</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOGOS / TRUST BAR ===================== -->
+  <section class="logos-bar" aria-label="Trusted by">
+    <p class="logos-bar__label">Trusted by teams at</p>
+    <div class="logos-bar__track" aria-hidden="true">
+      <div class="logos-bar__list">
+        <span class="logo-pill">Notion</span>
+        <span class="logo-pill">Shopify</span>
+        <span class="logo-pill">Linear</span>
+        <span class="logo-pill">Vercel</span>
+        <span class="logo-pill">Stripe</span>
+        <span class="logo-pill">Loom</span>
+        <span class="logo-pill">Figma</span>
+        <span class="logo-pill">Webflow</span>
+        <span class="logo-pill" aria-hidden="true">Notion</span>
+        <span class="logo-pill" aria-hidden="true">Shopify</span>
+        <span class="logo-pill" aria-hidden="true">Linear</span>
+        <span class="logo-pill" aria-hidden="true">Vercel</span>
+        <span class="logo-pill" aria-hidden="true">Stripe</span>
+        <span class="logo-pill" aria-hidden="true">Loom</span>
+        <span class="logo-pill" aria-hidden="true">Figma</span>
+        <span class="logo-pill" aria-hidden="true">Webflow</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title" id="services-heading">One assistant,<br />infinite capability</h2>
+        <p class="section-desc">
+          Your VA handles the repetitive, time-consuming work — freeing you to lead, create, and grow.
+        </p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">📧</div>
+          <h3>Email & Calendar</h3>
+          <p>Inbox management, scheduling, reminders, and follow-ups — handled with precision.</p>
+          <span class="service-tag">Most Popular</span>
+        </article>
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">📊</div>
+          <h3>Research & Reports</h3>
+          <p>Market research, competitor analysis, data gathering and beautiful report creation.</p>
+        </article>
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">✍️</div>
+          <h3>Content Creation</h3>
+          <p>Blog posts, social media, newsletters, and copy that speaks to your audience.</p>
+        </article>
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">🛠️</div>
+          <h3>Tech & Admin</h3>
+          <p>CRM management, data entry, software setup, and operational support.</p>
+        </article>
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">🎯</div>
+          <h3>Project Management</h3>
+          <p>Task tracking, deadline management, and stakeholder coordination done right.</p>
+        </article>
+        <article class="service-card" tabindex="0">
+          <div class="service-icon" aria-hidden="true">💬</div>
+          <h3>Customer Support</h3>
+          <p>Responsive, friendly support that delights your customers and builds loyalty.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works" id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">The Process</p>
+        <h2 class="section-title" id="hiw-heading">Up and running<br />in 3 simple steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num" aria-hidden="true">01</div>
+          <div class="step__body">
+            <h3>Tell us what you need</h3>
+            <p>Answer a few quick questions about your tasks, working style, and preferences.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step__num" aria-hidden="true">02</div>
+          <div class="step__body">
+            <h3>We match you instantly</h3>
+            <p>Our algorithm surfaces the top 3 pre-vetted VAs perfectly suited to your needs.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step__num" aria-hidden="true">03</div>
+          <div class="step__body">
+            <h3>Start delegating</h3>
+            <p>Your VA is onboarded within 24 hours. Delegate, relax, and watch results arrive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== IMAGE CAROUSEL WITH ZOOM ===================== -->
+  <section class="carousel-section" id="carousel-section" aria-labelledby="carousel-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title" id="carousel-heading">Crafted with care,<br />delivered with precision</h2>
+        <p class="section-desc">Hover over any image to get a closer look at the quality our VAs deliver every day.</p>
+      </div>
+    </div>
+
+   
+    <div class="carousel" role="region" aria-label="Work samples carousel">
+      <div class="carousel__track" id="carouselTrack">
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 1: Dashboard design">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+              alt="Analytics dashboard sample"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+              <span class="zoom-badge">🔍 Hover to zoom</span>
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>Analytics Dashboard</h4>
+            <p>Data visualization & reporting</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 2: Email campaign">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600&q=80"
+              alt="Email campaign template"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>Email Campaigns</h4>
+            <p>Copywriting & design</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 3: Research report">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
+              alt="Market research report"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>Market Research</h4>
+            <p>In-depth competitor analysis</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 4: Social media content">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80"
+              alt="Social media content calendar"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>Social Media</h4>
+            <p>Content planning & scheduling</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 5: Project management">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=600&q=80"
+              alt="Project management board"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>Project Management</h4>
+            <p>Tracking & coordination</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide" tabindex="0" aria-label="Work sample 6: CRM management">
+          <div class="slide__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+              alt="CRM and data management"
+              class="slide__img"
+              loading="lazy"
+            />
+            <div class="zoom-overlay" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=90"
+                alt=""
+                class="zoom-img"
+              />
+            </div>
+          </div>
+          <div class="slide__caption">
+            <h4>CRM Management</h4>
+            <p>Data hygiene & outreach</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel__controls" aria-label="Carousel controls">
+        <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Previous slide">
+          ←
+        </button>
+        <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Carousel navigation"></div>
+        <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Next slide">
+          →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Social Proof</p>
+        <h2 class="section-title" id="testimonials-heading">Founders love<br />their Gushwork VAs</h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card testimonial-card--featured">
+          <p class="testimonial-text">"My VA saves me 15+ hours every week. She handles my inbox, schedules calls, and even writes first drafts of investor updates. It's genuinely the best hire I've ever made."</p>
+          <footer class="testimonial-footer">
+            <img src="https://i.pravatar.cc/48?img=33" alt="Sarah Chen" class="testimonial-avatar" />
+            <div>
+              <cite class="testimonial-name">Sarah Chen</cite>
+              <p class="testimonial-role">CEO, Loopback AI</p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"Hired in 24 hours. Onboarded in a day. Couldn't believe how smooth the process was. Highly recommend."</p>
+          <footer class="testimonial-footer">
+            <img src="https://i.pravatar.cc/48?img=14" alt="James Okafor" class="testimonial-avatar" />
+            <div>
+              <cite class="testimonial-name">James Okafor</cite>
+              <p class="testimonial-role">Founder, Stackly</p>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"The quality of work is outstanding. My VA catches errors I would have missed and proactively suggests improvements."</p>
+          <footer class="testimonial-footer">
+            <img src="https://i.pravatar.cc/48?img=21" alt="Riya Kapoor" class="testimonial-avatar" />
+            <div>
+              <cite class="testimonial-name">Riya Kapoor</cite>
+              <p class="testimonial-role">COO, Sprinto</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA / CONTACT ===================== -->
+  <section class="cta-section" id="contact" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-card">
+        <p class="section-eyebrow">Get Started</p>
+        <h2 id="cta-heading">Ready to reclaim<br />your time?</h2>
+        <p>Join 500+ companies delegating smarter with Gushwork. Your first VA is matched in 24 hours.</p>
+        <form class="cta-form" id="ctaForm" novalidate aria-label="Get started form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Alex Johnson" required autocomplete="name" />
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="alex@company.com" required autocomplete="email" />
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="need">What do you need help with?</label>
+            <select id="need" name="need" required>
+              <option value="" disabled selected>Select a primary task area</option>
+              <option value="email">Email & Calendar</option>
+              <option value="research">Research & Reports</option>
+              <option value="content">Content Creation</option>
+              <option value="admin">Tech & Admin</option>
+              <option value="pm">Project Management</option>
+              <option value="support">Customer Support</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Match Me With a VA →</button>
+          <p class="form-note">No credit card required. Cancel anytime.</p>
+        </form>
+        <div class="cta-success" id="ctaSuccess" aria-live="polite" hidden>
+          <span class="success-icon" aria-hidden="true">🎉</span>
+          <h3>You're on the list!</h3>
+          <p>We'll match you with top VAs within 24 hours. Check your inbox.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="Gushwork home">
+          <span class="logo-icon">G</span>
+          <span>Gushwork</span>
+        </a>
+        <p>The smartest way to hire and manage world-class virtual assistants.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#">How It Works</a>
+          <a href="#">Pricing</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Gushwork. All rights reserved.</p>
+      <p>Made with ♥ for busy founders everywhere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
